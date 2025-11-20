@@ -9,7 +9,7 @@ Compare electric vs petrol cars: cost, CO₂, maintenance. Static HTML/JS/CSS si
 
 ## 🌐 Live Demo
 Replace the link below once you enable Pages:  
-👉 talha-2709.github.io
+👉 https://talha-2709.github.io/EcoCompare/
 
 ## 🛠️ Tech Stack
 - HTML5 semantic elements  
