@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EV vs Petrol Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Lora&display=swap" rel="stylesheet">  
+  
+</head>
+<body class="calculator">
+    
+  <header>
+    <div class="logo"><img src="images/logo.png" alt="EcoCompare" /> </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="signup.html">Sign Up/Login</a></li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Input Form -->
+    <section class="form-section">
+      <h2>Comparison Input Form</h2>
+      <div class="input-group">
+        <label>Annual Mileage</label>
+        <input type="number" id="mileage" placeholder="e.g. 15000" />
+      </div>
+      <div class="input-group">
+        <label>Fuel Cost per Litre</label>
+        <input type="number" id="fuelCost" placeholder="e.g. 1.5" />
+      </div>
+      <div class="input-group">
+        <label>Electricity Cost per Unit</label>
+        <input type="number" id="electricityCost" placeholder="e.g. 0.15" />
+      </div>
+      <div class="input-group">
+        <label>Location</label>
+        <input type="text" id="location" placeholder="e.g. London" />
+      </div>
+      <button id="compareBtn">Compare Now</button>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="results-section">
+      <h2>Calculator</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>EV Value</th>
+            <th>Petrol Value</th>
+            <th>Difference</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Initial Cost</td>
+            <td id="evInitial">£--</td>
+            <td id="petrolInitial">£--</td>
+            <td id="initialDiff">£--</td>
+          </tr>
+          <tr>
+            <td>Annual Operating Cost</td>
+            <td id="evOperating">£--</td>
+            <td id="petrolOperating">£--</td>
+            <td id="operatingDiff">£--</td>
+          </tr>
+          <tr>
+            <td>Maintenance</td>
+            <td id="evMaint">£--</td>
+            <td id="petrolMaint">£--</td>
+            <td id="maintDiff">£--</td>
+          </tr>
+          <tr>
+            <td>5-Year Total</td>
+            <td id="evTotal">£--</td>
+            <td id="petrolTotal">£--</td>
+            <td id="totalDiff">£--</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class = "result-btn">Result</button>
+    </section>
+  </main>
+
+  
+  <footer>
+    <ul>
+        <li><a href= "#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#" >Copyright</a></li>
+    </ul>
+    <p>Images from: 
+                
+      <a href="https://www.pexels.com/photo/high-angle-view-of-green-trees-4840134/" target="_blank">Pexels</a>,
+      <a href="https://www.pexels.com/photo/kia-ev6-standing-on-the-field-with-wind-power-generator-13466930/" target="_blank">Pexels</a>,
+           <a href=https://www.pexels.com/photo/white-windmill-414807/ target="_blank">Pexels</a>,
+        <a href="https://www.pexels.com/photo/industry-charging-vehicle-technology-9800009/" target="_blank">Pexels</a>,
+        <a href="https://unsplash.com/photos/library-shelf-near-black-wooden-ladder-lc7xcWebECc" target="_blank">Unsplash</a>,
+        <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=661273" target="_blank">Pixabay</a>,
+       
+        
+        <a href="https://www.pexels.com/photo/close-up-photo-of-monitor-159888/" target="_blank">Pexels</a>,
+        <a href=" https://www.pexels.com/photo/questions-answers-signage-208494/" target="_blank">Pexels</a>
+  
+      </p>
+</footer>
+
+  <script src="calculatorscript.js"></script>
+</body>
+</html>

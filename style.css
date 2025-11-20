@@ -1,0 +1,493 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+     
+    color: #0B3D91; 
+}
+
+body.signup {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: #f4f4f4;
+}
+
+/* compariosn page */
+body.comparison .articles ul,
+body.comparison .pros-cons ul,
+body.comparison .infographic ul,
+body.comparison .faq ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}  
+body.comparison section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #aaa;
+    
+}
+
+body.comparison {
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+body.comparison h2 {
+    color: white; 
+}
+
+
+body.comparison .articles
+{
+    background-image: url(images/articles.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color:white;
+   
+}
+body.comparison .pros-cons
+{
+    background-image: url(images/pro.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color:white;
+   
+}
+body.comparison .infographic
+{
+    background-image: url(images/graphs.png);
+
+    background-size: cover; 
+
+    background-position: center;
+
+    background-repeat: no-repeat; 
+
+    color:white;
+   
+}
+body.comparison .faq
+{
+    background-image: url(images/question.png);
+    background-size: cover; 
+
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color:white;
+   
+}
+
+/* Header */
+header {
+    display: flex;
+ justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    background-color: #269f46; 
+}
+.logo img {
+    height: 50px; 
+    width: auto;
+}
+.logo img {
+    filter: brightness(0) invert(1);
+  }
+  
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; 
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #FFA500;
+    text-decoration: underline; 
+    font-size: 20px; 
+    transition: all 0.3s ease; 
+}
+
+/* input filds */
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button-common {
+    background-color: #FFA500; 
+    color: white;
+    padding: 12px 24px;
+    border: none;
+      border-radius: 5px;
+    cursor: pointer;
+     font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-common:hover {
+    background-color: #FF8C00; 
+    transform: scale(1.05); 
+}
+
+.button-common:active {
+    transform: scale(0.95); /* for shrink*/
+    background-color: #e67300; }/* dark when press*/
+
+
+
+/* Links */
+p {
+    font-size: 14px;
+}
+
+p a {
+    color: white; 
+     text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* hero sec   --home-- */
+
+.hero {
+    text-align: center;
+    padding: 150px 20px 50px 20px; /* to avoid overlapping */
+    background-image: url('images/hero final.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: white;
+    
+    position: relative; 
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+/* comparison---- sec*/
+.comparison-container {
+    display: flex;
+    flex-direction: column; /* for vertical stacking*/
+    gap: 30px;
+    padding: 50px;
+}
+
+.comparison-box {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 600px; /* Optional: Limit max width */
+    margin: 0 auto; /* for centering the box*/
+}
+
+.comparison-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.comparison-box h2 {
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+
+
+@media (min-width: 768px) {
+    /* Change comparison layout to horizontal on larger screens */
+    .comparison-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .comparison-box {
+        width: 30%; /* 3 boxes side by side */
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #0B3D91; 
+    color: white;
+    padding: 10px 0;
+    margin-top: 50px;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px; /* space for links */
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: #ff9900; /* color for hover */
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #0B3D91;
+  }
+  
+  .input-group {
+       margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+ border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Lora', serif;
+  }
+  
+  th {
+    background-color: #0B3D91;
+    color: white;
+  }
+  .calculator main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 0;
+  }
+  
+  .calculator .form-section,
+  .calculator .results-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .calculator #compareBtn,
+  .calculator .result-btn {
+    background-color: #FFA500;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .calculator #compareBtn:hover,
+  .calculator .result-btn:hover {
+    background-color: #FF8C00;
+  }
+   
+  
+
+
+  .contact-us.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.contact-us.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-us.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.contact-us.contact-form button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+
+.contact-us .container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-us .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us .contact-form input,
+.contact-us .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-us .contact-form button {
+    background: #FFA500;
+    color: white;
+    border: none;
+
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.contact-us .contact-form button:hover {
+    background: #FF8C00;
+}
+
+
+
+/*Signup/Login */
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 50px;
+
+   
+}
+
+
+.auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px; 
+    margin: 30px auto; 
+   
+    background-color: #fff;
+    padding: 20px; 
+}
+
+/* Google Auth Section */
+.google-auth-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start  ;
+
+    margin-top: 30px;
+    width: 300px;
+}
+
+.google-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0B3D91;
+}
+
+
+/* Forgot Password Link */
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    font-size: 14px;
+    color: #0B3D91;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* smooth scroll */
+html {
+    scroll-behavior: smooth;
+}

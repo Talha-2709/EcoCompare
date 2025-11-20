@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-us">
+    <header class="navbar">
+        <div class="logo"><img src="images/logo.png" alt="EcoCompare" /> </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="signup.html">Sign Up/Login</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+               <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <label>Name: <input type="text" placeholder="Enter your name"></label>
+
+            <label>Email: <input type="email" placeholder="Enter your email"></label>
+
+            <label>Message: <textarea placeholder="Enter your message"></textarea></label>
+
+            <button onclick="sendMessage()">Send Message</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h3>Company Information</h3>
+        <p>Office Address: 123 Business St, City, Country</p>
+    </div>
+
+
+    <div class="container">
+        <h3>FAQ and Quick Help</h3>
+        <p>Find answers to common questions here.</p>
+    </div>
+
+
+    <footer>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Cookies</a></li>
+
+            <li><a href="#">Copyright</a></li>
+        </ul>
+        <p>Images from: 
+                
+            <a href="https://www.pexels.com/photo/high-angle-view-of-green-trees-4840134/" target="_blank">Pexels</a>,
+            <a href="https://www.pexels.com/photo/kia-ev6-standing-on-the-field-with-wind-power-generator-13466930/" target="_blank">Pexels</a>,
+                 <a href=https://www.pexels.com/photo/white-windmill-414807/ target="_blank">Pexels</a>,
+              <a href="https://www.pexels.com/photo/industry-charging-vehicle-technology-9800009/"target="_blank">Pexels</a>,
+              <a href="https://unsplash.com/photos/library-shelf-near-black-wooden-ladder-lc7xcWebECc" target="_blank">Unsplash</a>,
+              <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=661273" target="_blank">Pixabay</a>,
+             
+              
+              <a href="https://www.pexels.com/photo/close-up-photo-of-monitor-159888/"target="_blank">Pexels</a>,
+              <a href=" https://www.pexels.com/photo/questions-answers-signage-208494/"target="_blank">Pexels</a>
+        
+            </p>
+    </footer>
+
+
+    <script>
+        function sendMessage() {
+            const name = document.querySelector('input[type="text"]').value.trim();
+
+            const email = document.querySelector('input[type="email"]').value.trim();
+
+            const message = document.querySelector('textarea').value.trim();
+    
+            if (!name || !email || !message) {
+                alert("Please fill out all fields before sending your message.");
+                return;
+            }
+    
+            // Ssimulate send mes
+            alert("Thank you, " + name + "! Your message has been sent successfully.");
+            
+            // option reset 
+            document.querySelector('input[type="text"]').value = '';
+            document.querySelector('input[type="email"]').value = '';
+            document.querySelector('textarea').value = '';
+        }
+    </script>
+    
+</body>
+</html>
